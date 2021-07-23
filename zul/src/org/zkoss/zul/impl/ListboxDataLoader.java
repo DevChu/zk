@@ -178,6 +178,7 @@ public class ListboxDataLoader implements DataLoader, Cropper { //no need to ser
 	private void invalidateListitems() {
 		//Bug 3147518: avoid memory leak
 		//Also better performance (outer better than remove a lot)
+		if (!_listbox.isInitialized()) return;
 		final Execution execution = Executions.getCurrent();
 		final String uuid = _listbox.getUuid();
 		final boolean isDeferInitModel = execution != null && execution.getAttribute("zkoss.Listbox.deferInitModel_" + uuid) != null;
