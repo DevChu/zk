@@ -3,6 +3,13 @@ rootProject.name = 'zktest'
 // Enable more logs when needed: ./gradlew -Dzktest.composite.debug=true
 def debugComposite = System.getProperty("zktest.composite.debug") == "true"
 
+// Disable composite build substitution (resolve ZK deps from maven instead of local source):
+// ./gradlew -Dzktest.composite.disable=true
+if (System.getProperty("zktest.composite.disable") == "true") {
+    logger.lifecycle("[zktest] Composite build substitution DISABLED — resolving ZK deps from maven.")
+    return
+}
+
 // ---- Helper: Resolve Path Safely ----
 File resolveProjectDir(String relativePath) {
     try {
