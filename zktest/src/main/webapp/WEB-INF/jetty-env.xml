@@ -1,5 +1,5 @@
-<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "https://www.eclipse.org/jetty/configure_10_0.dtd">
-<Configure id="webAppCtxUnique" class="org.eclipse.jetty.webapp.WebAppContext">
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "https://www.eclipse.org/jetty/configure_9_3.dtd">
+<Configure id="webAppCtxUnique" class="org.eclipse.jetty.ee10.webapp.WebAppContext">
 	<New  class="org.eclipse.jetty.plus.jndi.Resource">
 		<Arg>
 			<Ref id="webAppCtxUnique2" />
@@ -7,7 +7,7 @@
 		<Arg>BeanManager</Arg>
 		<Arg>
 			<New class="javax.naming.Reference">
-				<Arg>javax.enterprise.inject.spi.BeanManager</Arg>
+				<Arg>jakarta.enterprise.inject.spi.BeanManager</Arg>
 				<Arg>org.jboss.weld.resources.ManagerObjectFactory</Arg>
 				<Arg />
 			</New>

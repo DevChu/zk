@@ -3,7 +3,7 @@ package org.zkoss.zktest.cdi.domain;
 import java.util.LinkedList;
 import java.util.List;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named
 public class SpecialOrderService implements OrderService{

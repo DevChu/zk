@@ -19,10 +19,10 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.LinkedHashMap;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.zkoss.json.JSONArray;
 
@@ -36,7 +36,7 @@ public class BookSuggest extends HttpServlet {
 	private Map _bookInfos;
 
 	public void service(HttpServletRequest request, HttpServletResponse response)
-	throws javax.servlet.ServletException, java.io.IOException {
+	throws jakarta.servlet.ServletException, java.io.IOException {
 		final String bookId = request.getParameter("bookId");
 		if (bookId != null) {
 			List bookInfo = (List)_bookInfos.get(bookId);

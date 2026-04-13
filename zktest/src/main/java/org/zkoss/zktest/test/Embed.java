@@ -12,9 +12,9 @@ Copyright (C) 2009 Potix Corporation. All Rights Reserved.
 */
 package org.zkoss.zktest.test;
 
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.zkoss.zk.ui.Desktop;
 import org.zkoss.zk.ui.Page;
@@ -33,7 +33,7 @@ import org.zkoss.zul.Listitem;
 public class Embed extends HttpServlet {
 	private int cnt = 0;
 	public void service(HttpServletRequest request, HttpServletResponse response)
-	throws javax.servlet.ServletException, java.io.IOException {
+	throws jakarta.servlet.ServletException, java.io.IOException {
 		final Desktop desktop = getDesktop(request);
 		Bridge bridge = Bridge.start(getServletContext(), request, response, desktop);
 		try {

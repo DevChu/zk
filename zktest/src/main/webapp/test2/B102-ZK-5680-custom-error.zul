@@ -11,6 +11,6 @@ B102-ZK-5680-custom-error.zul
 
 Copyright (C) 2025 Potix Corporation. All Rights Reserved.
 -->
-<window title="Error ${requestScope['javax.servlet.error.status_code']}" mode="modal" closable="true">
-	custom error: ${requestScope['javax.servlet.error.message']}
+<window title="Error ${requestScope['jakarta.servlet.error.status_code']}" mode="modal" closable="true">
+	custom error: ${requestScope['jakarta.servlet.error.message']}
 </window>

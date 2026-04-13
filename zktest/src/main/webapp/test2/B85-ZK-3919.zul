@@ -23,8 +23,8 @@ Copyright (C) 2018 Potix Corporation. All Rights Reserved.
     <zscript>
         import org.zkoss.zk.au.http.AuExtension;
         import org.zkoss.zk.au.http.DHtmlUpdateServlet;
-        import javax.servlet.http.HttpServletRequest;
-        import javax.servlet.http.HttpServletResponse;
+        import jakarta.servlet.http.HttpServletRequest;
+        import jakarta.servlet.http.HttpServletResponse;
 
         AuExtension auExt = new AuExtension() {
         public void init(DHtmlUpdateServlet servlet) {

@@ -1,6 +1,6 @@
 package org.zkoss.zktest.test2;
 
-import javax.servlet.ServletRequest;
+import jakarta.servlet.ServletRequest;
 
 import org.zkoss.web.servlet.Servlets;
 import org.zkoss.zk.ui.Component;

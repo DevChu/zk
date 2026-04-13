@@ -30,8 +30,8 @@ import org.zkoss.web.theme.ThemeResolver;
 import org.zkoss.zk.ui.Execution;
 import org.zkoss.zul.theme.StandardThemeProvider;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class B104_ZK_6024Test extends WebDriverTestCase {
 

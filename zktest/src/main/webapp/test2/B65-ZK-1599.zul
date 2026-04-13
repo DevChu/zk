@@ -22,8 +22,8 @@ Failed to load media, /view/z_fp70/sZdVlc/0qa1/1/c/a.png
 >>	at org.zkoss.zk.ui.impl.DesktopImpl.getComponentByUuid(DesktopImpl.java:512)
 >>	at org.zkoss.zk.au.http.AuDynaMediar.service(AuDynaMediar.java:115)
 >>	at org.zkoss.zk.au.http.DHtmlUpdateServlet.doGet(DHtmlUpdateServlet.java:450)
->>	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
->>	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+>>	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:707)
+>>	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:820)
 >>	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
 >>	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
 		

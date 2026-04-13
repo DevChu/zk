@@ -24,9 +24,9 @@ Copyright (C) 2018 Potix Corporation. All Rights Reserved.
 	<zscript><![CDATA[
 		import org.zkoss.lang.Threads;
 		import org.zkoss.zk.au.http.*;
-		import javax.servlet.ServletException;
-		import javax.servlet.http.HttpServletRequest;
-		import javax.servlet.http.HttpServletResponse;
+		import jakarta.servlet.ServletException;
+		import jakarta.servlet.http.HttpServletRequest;
+		import jakarta.servlet.http.HttpServletResponse;
 		import java.io.IOException;
 		public class RedirectAuExt implements AuExtension {
 			public void service(HttpServletRequest request, HttpServletResponse response, String pi) throws ServletException, IOException {
